@@ -3,6 +3,116 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/AdjacentIncreasingSubarraysDetectionI_3349.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/AdjacentIncreasingSubarraysDetectionI_3349.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3349" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/AdjacentIncreasingSubarraysDetectionI_3349.java" />
+              <option name="titleSlug" value="adjacent-increasing-subarrays-detection-i" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/CheckBalancedString_3340.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/CheckBalancedString_3340.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3340" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/CheckBalancedString_3340.java" />
+              <option name="titleSlug" value="check-balanced-string" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/FindMinimumTimeToReachLastRoomI_3341.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/FindMinimumTimeToReachLastRoomI_3341.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3341" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/FindMinimumTimeToReachLastRoomI_3341.java" />
+              <option name="titleSlug" value="find-minimum-time-to-reach-last-room-i" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/FindMinimumTimeToReachLastRoomIi.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/FindMinimumTimeToReachLastRoomIi.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3342" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/FindMinimumTimeToReachLastRoomIi.java" />
+              <option name="titleSlug" value="find-minimum-time-to-reach-last-room-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/MakeArrayElementsEqualToZero_3354.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/MakeArrayElementsEqualToZero_3354.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3354" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/MakeArrayElementsEqualToZero_3354.java" />
+              <option name="titleSlug" value="make-array-elements-equal-to-zero" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/MinimumOperationsToMakeArrayValuesEqualToK_3375.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/[!3375]使数组的值全部为 K 的最少操作次数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3375" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/[!3375]使数组的值全部为 K 的最少操作次数.java" />
+              <option name="titleSlug" value="minimum-operations-to-make-array-values-equal-to-k" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/SmallestDivisibleDigitProductI_3345.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/SmallestDivisibleDigitProductI_3345.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3345" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/SmallestDivisibleDigitProductI_3345.java" />
+              <option name="titleSlug" value="smallest-divisible-digit-product-i" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/ZeroArrayTransformationI_3355.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/ZeroArrayTransformationI_3355.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3355" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/ZeroArrayTransformationI_3355.java" />
+              <option name="titleSlug" value="zero-array-transformation-i" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/[!3375]使数组的值全部为 K 的最少操作次数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/[!3375]使数组的值全部为 K 的最少操作次数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3375" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/[!3375]使数组的值全部为 K 的最少操作次数.java" />
+              <option name="titleSlug" value="minimum-operations-to-make-array-values-equal-to-k" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/[!3377]使两个整数相等的数位操作.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/[!3377]使两个整数相等的数位操作.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3377" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/[!3377]使两个整数相等的数位操作.java" />
+              <option name="titleSlug" value="digit-operations-to-make-two-integers-equal" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/[1]两数之和.java">
           <value>
             <LeetcodeEditor>
@@ -11,6 +121,39 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/[1]两数之和.java" />
               <option name="titleSlug" value="two-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/[21]合并两个有序链表.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/[21]合并两个有序链表.md" />
+              <option name="frontendQuestionId" value="leetcode.cn21" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/[21]合并两个有序链表.java" />
+              <option name="titleSlug" value="merge-two-sorted-lists" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/[2455]可被三整除的偶数的平均值.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/[2455]可被三整除的偶数的平均值.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2455" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/[2455]可被三整除的偶数的平均值.java" />
+              <option name="titleSlug" value="average-value-of-even-numbers-that-are-divisible-by-three" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/[2579]统计染色格子数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/[2579]统计染色格子数.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2579" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/[2579]统计染色格子数.java" />
+              <option name="titleSlug" value="count-total-number-of-colored-cells" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -25,14 +168,47 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/[3373]连接两棵树后最大目标节点数目 II.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/[3373]连接两棵树后最大目标节点数目 II.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3373" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/[3373]连接两棵树后最大目标节点数目 II.java" />
+              <option name="titleSlug" value="maximize-the-number-of-target-nodes-after-connecting-trees-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/[3374]首字母大写 II.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/[3374]首字母大写 II.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3374" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/[3374]首字母大写 II.java" />
+              <option name="titleSlug" value="first-letter-capitalization-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/[3375]使数组的值全部为 K 的最少操作次数.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/[3375]使数组的值全部为 K 的最少操作次数.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/[!3375]使数组的值全部为 K 的最少操作次数.md" />
               <option name="frontendQuestionId" value="leetcode.cn3375" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/[3375]使数组的值全部为 K 的最少操作次数.java" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/[!3375]使数组的值全部为 K 的最少操作次数.java" />
               <option name="titleSlug" value="minimum-operations-to-make-array-values-equal-to-k" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/[3378]统计最小公倍数图中的连通块数目.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/[3378]统计最小公倍数图中的连通块数目.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3378" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/[3378]统计最小公倍数图中的连通块数目.java" />
+              <option name="titleSlug" value="count-connected-components-in-lcm-graph" />
             </LeetcodeEditor>
           </value>
         </entry>
