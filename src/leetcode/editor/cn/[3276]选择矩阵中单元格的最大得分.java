@@ -55,6 +55,7 @@
   
 package leetcode.editor.cn;
 
+import java.util.ArrayList;
 import java.util.List;
 
 class SelectCellsInGridWithMaximumScore_3276{
@@ -66,6 +67,21 @@ class SelectCellsInGridWithMaximumScore_3276{
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int maxScore(List<List<Integer>> grid) {
+
+        List<List<Integer>> res = new ArrayList<>();
+        for(int i = 0; i < grid.size(); i++){
+            if (i == 0){
+                res.add(grid.get(i));
+            }else{
+                List<Integer> temp = new ArrayList<>();
+                for( int j = 0; j < grid.get(i).size(); j++){
+                    // ???
+                }
+            }
+
+        }
+
+
         return 0;
     }
 }

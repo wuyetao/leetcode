@@ -168,6 +168,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/[3276]选择矩阵中单元格的最大得分.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/[3276]选择矩阵中单元格的最大得分.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3276" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/[3276]选择矩阵中单元格的最大得分.java" />
+              <option name="titleSlug" value="select-cells-in-grid-with-maximum-score" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/[3373]连接两棵树后最大目标节点数目 II.java">
           <value>
             <LeetcodeEditor>
