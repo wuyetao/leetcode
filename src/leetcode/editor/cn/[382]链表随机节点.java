@@ -59,16 +59,7 @@ import java.util.Random;
 class LinkedListRandomNode_382{
 
 public static void main(String[] args) {
-Solution solution = new LinkedListRandomNode_382().new Solution();
 }
-
-
-public class ListNode {
-    int val;
-    ListNode next;
-    ListNode() {}ListNode(int val) { this.val = val; }ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-}
-
 
 
 //leetcode submit region begin(Prohibit modification and deletion)

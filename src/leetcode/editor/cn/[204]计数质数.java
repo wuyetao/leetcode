@@ -45,7 +45,7 @@ Solution solution = new CountPrimes_204().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int countPrimes(int n) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

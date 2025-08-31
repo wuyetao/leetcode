@@ -43,7 +43,7 @@ Solution solution = new ValidPerfectSquare_367().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean isPerfectSquare(int num) {
-        
+        return false;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

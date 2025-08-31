@@ -51,7 +51,7 @@ Solution solution = new SlidingWindowMaximum_239().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
-        
+        return new int[nums.length - k + 1];
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

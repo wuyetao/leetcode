@@ -66,7 +66,7 @@ Solution solution = new ConvertSortedListToBinarySearchTree_109().new Solution()
  */
 class Solution {
     public TreeNode sortedListToBST(ListNode head) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

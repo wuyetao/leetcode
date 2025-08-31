@@ -78,6 +78,9 @@
 
 
 package leetcode.editor.cn;
+
+import java.util.List;
+
 class TextJustification_68{
 
 public static void main(String[] args) {
@@ -87,7 +90,7 @@ Solution solution = new TextJustification_68().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<String> fullJustify(String[] words, int maxWidth) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

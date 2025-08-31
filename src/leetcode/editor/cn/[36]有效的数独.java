@@ -74,7 +74,7 @@ Solution solution = new ValidSudoku_36().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean isValidSudoku(char[][] board) {
-        
+        return false;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

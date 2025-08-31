@@ -56,7 +56,7 @@ Solution solution = new RemoveLinkedListElements_203().new Solution();
  */
 class Solution {
     public ListNode removeElements(ListNode head, int val) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

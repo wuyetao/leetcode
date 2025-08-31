@@ -41,6 +41,9 @@
 
 
 package leetcode.editor.cn;
+
+import java.util.List;
+
 class FindKPairsWithSmallestSums_373{
 
 public static void main(String[] args) {
@@ -50,7 +53,7 @@ Solution solution = new FindKPairsWithSmallestSums_373().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

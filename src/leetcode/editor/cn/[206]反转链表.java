@@ -63,7 +63,7 @@ Solution solution = new ReverseLinkedList_206().new Solution();
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

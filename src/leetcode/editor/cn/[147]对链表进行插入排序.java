@@ -69,7 +69,7 @@ Solution solution = new InsertionSortList_147().new Solution();
  */
 class Solution {
     public ListNode insertionSortList(ListNode head) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

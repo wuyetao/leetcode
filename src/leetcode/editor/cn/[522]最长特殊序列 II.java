@@ -48,7 +48,7 @@ Solution solution = new LongestUncommonSubsequenceIi_522().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int findLUSlength(String[] strs) {
-        
+        return strs[0].length();
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

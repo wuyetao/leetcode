@@ -50,7 +50,7 @@ Solution solution = new SearchA2dMatrixIi_240().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
-        
+        return false;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -55,7 +55,7 @@ Solution solution = new KthSmallestElementInASortedMatrix_378().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int kthSmallest(int[][] matrix, int k) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

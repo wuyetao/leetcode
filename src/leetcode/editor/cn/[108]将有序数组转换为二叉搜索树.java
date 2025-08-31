@@ -57,7 +57,7 @@ Solution solution = new ConvertSortedArrayToBinarySearchTree_108().new Solution(
  */
 class Solution {
     public TreeNode sortedArrayToBST(int[] nums) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

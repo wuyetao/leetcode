@@ -630,6 +630,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/[3601]寻找燃油效率提升的驾驶员.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/[3601]寻找燃油效率提升的驾驶员.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3601" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/[3601]寻找燃油效率提升的驾驶员.java" />
+              <option name="titleSlug" value="find-drivers-with-improved-fuel-efficiency" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/[367]有效的完全平方数.java">
           <value>
             <LeetcodeEditor>

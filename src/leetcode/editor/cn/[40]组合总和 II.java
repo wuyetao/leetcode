@@ -42,6 +42,9 @@
 
 
 package leetcode.editor.cn;
+
+import java.util.List;
+
 class CombinationSumIi_40{
 
 public static void main(String[] args) {
@@ -51,7 +54,7 @@ Solution solution = new CombinationSumIi_40().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -59,7 +59,7 @@ Solution solution = new ConstructBinaryTreeFromInorderAndPostorderTraversal_106(
  */
 class Solution {
     public TreeNode buildTree(int[] inorder, int[] postorder) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -36,6 +36,9 @@
 
 
 package leetcode.editor.cn;
+
+import java.util.List;
+
 class BinaryTreeLevelOrderTraversal_102{
 
 public static void main(String[] args) {
@@ -60,7 +63,7 @@ Solution solution = new BinaryTreeLevelOrderTraversal_102().new Solution();
  */
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

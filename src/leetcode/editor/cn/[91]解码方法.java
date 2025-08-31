@@ -66,7 +66,7 @@ Solution solution = new DecodeWays_91().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int numDecodings(String s) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

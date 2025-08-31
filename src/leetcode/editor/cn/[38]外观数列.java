@@ -70,7 +70,7 @@ Solution solution = new CountAndSay_38().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String countAndSay(int n) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

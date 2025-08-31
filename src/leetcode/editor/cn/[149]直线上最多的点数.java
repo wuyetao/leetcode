@@ -40,7 +40,7 @@ Solution solution = new MaxPointsOnALine_149().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int maxPoints(int[][] points) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

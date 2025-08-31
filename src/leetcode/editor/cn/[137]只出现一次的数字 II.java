@@ -41,7 +41,7 @@ Solution solution = new SingleNumberIi_137().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int singleNumber(int[] nums) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

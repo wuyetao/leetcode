@@ -42,7 +42,7 @@ Solution solution = new Sqrtx_69().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int mySqrt(int x) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

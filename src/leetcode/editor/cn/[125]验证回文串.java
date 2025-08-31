@@ -53,7 +53,7 @@ Solution solution = new ValidPalindrome_125().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean isPalindrome(String s) {
-        
+        return false;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

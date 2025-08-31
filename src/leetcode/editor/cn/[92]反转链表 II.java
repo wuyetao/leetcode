@@ -55,7 +55,7 @@ Solution solution = new ReverseLinkedListIi_92().new Solution();
  */
 class Solution {
     public ListNode reverseBetween(ListNode head, int left, int right) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

@@ -50,7 +50,7 @@ Solution solution = new PowerOfFour_342().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean isPowerOfFour(int n) {
-        
+        return false;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

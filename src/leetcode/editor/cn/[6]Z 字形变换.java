@@ -65,7 +65,7 @@ Solution solution = new ZigzagConversion_6().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String convert(String s, int numRows) {
-        
+        return "";
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

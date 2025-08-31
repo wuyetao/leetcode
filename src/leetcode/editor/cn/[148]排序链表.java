@@ -62,7 +62,7 @@ Solution solution = new SortList_148().new Solution();
  */
 class Solution {
     public ListNode sortList(ListNode head) {
-        
+        return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

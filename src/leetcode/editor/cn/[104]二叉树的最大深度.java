@@ -59,7 +59,7 @@ Solution solution = new MaximumDepthOfBinaryTree_104().new Solution();
  */
 class Solution {
     public int maxDepth(TreeNode root) {
-        
+        return 0;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
