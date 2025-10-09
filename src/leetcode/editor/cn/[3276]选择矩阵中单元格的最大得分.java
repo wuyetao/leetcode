@@ -55,35 +55,94 @@
   
 package leetcode.editor.cn;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 class SelectCellsInGridWithMaximumScore_3276{
 
   public static void main(String[] args) {
        Solution solution = new SelectCellsInGridWithMaximumScore_3276().new Solution();
+       int [][] grid = {
+               {92,11,45,88,38,13,65,85},
+      {52,83,3,14,82,51,27,59},
+          {65,69,99,27,7,70,39,43},
+              {43,46,22,19,75,70,57,50},
+                  {54,36,91,80,74,43,62,61},
+                      {35,45,19,32,92,50,93,88},
+                          {60,15,93,10,89,32,51,11},
+                              {82,66,42,61,78,94,66,7},
+                                  {75,56,49,78,81,61,79,50}
+      };
+
+       // 数组转列表
+       List<List<Integer>> list = new ArrayList<>();
+       for (int i = 0; i < grid.length; i++) {
+           List<Integer> list1 = new ArrayList<>();
+           for (int j = 0; j < grid[i].length; j++) {
+               list1.add(grid[i][j]);
+           }
+           list.add(list1);
+       }
+       System.out.println(solution.maxScore(list));
   }
   
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
+
     public int maxScore(List<List<Integer>> grid) {
+        if (grid == null || grid.isEmpty()) return 0;
 
-        List<List<Integer>> res = new ArrayList<>();
-        for(int i = 0; i < grid.size(); i++){
-            if (i == 0){
-                res.add(grid.get(i));
-            }else{
-                List<Integer> temp = new ArrayList<>();
-                for( int j = 0; j < grid.get(i).size(); j++){
-                    // ???
-                }
+        // 记录每个数字出现在哪些行（用二进制位掩码）
+        Map<Integer, Integer> pos = new HashMap<>();
+        int m = grid.size();
+        for (int i = 0; i < m; i++) {
+            for (int x : grid.get(i)) {
+                // 合并行掩码：如果 x 出现在多行，用 OR 运算合并
+                pos.merge(x, 1 << i, (a, b) -> a | b);
             }
-
         }
 
+        // 只考虑在 grid 中的唯一数字
+        List<Integer> allNums = new ArrayList<>(pos.keySet());
+        int n = allNums.size();
 
-        return 0;
+        // memo[i][j] 表示前 i 个数字，行掩码为 j 时的最大和
+        int[][] memo = new int[n][1 << m];
+        for (int[] row : memo) {
+            Arrays.fill(row, -1); // -1 表示未计算
+        }
+
+        // 从最大的数字开始 DFS（贪心优化）
+        allNums.sort(Collections.reverseOrder());
+
+        return dfs(n - 1, 0, pos, allNums, memo);
     }
+
+    private int dfs(int i, int j, Map<Integer, Integer> pos, List<Integer> allNums, int[][] memo) {
+        if (i < 0) {
+            return 0; // 没有数字可选，返回 0
+        }
+        if (memo[i][j] != -1) {
+            return memo[i][j]; // 已计算过，直接返回
+        }
+
+        // 不选当前数字 x
+        int res = dfs(i - 1, j, pos, allNums, memo);
+
+        // 尝试选当前数字 x
+        int x = allNums.get(i);
+        int rowMask = pos.get(x); // x 出现的行掩码
+
+        // 遍历所有 x 出现的行
+        for (int t = rowMask, lb; t > 0; t ^= lb) {
+            lb = t & -t; // 取出最低位的 1（即行号）
+            if ((j & lb) == 0) { // 如果该行未被选中
+                res = Math.max(res, dfs(i - 1, j | lb, pos, allNums, memo) + x);
+            }
+        }
+
+        return memo[i][j] = res; // 记忆化
+    }
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
