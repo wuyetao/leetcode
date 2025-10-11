@@ -33,6 +33,10 @@
 
 
 package leetcode.editor.cn;
+
+import java.util.Deque;
+import java.util.LinkedList;
+
 class TrappingRainWater_42{
 
 public static void main(String[] args) {
@@ -42,7 +46,61 @@ Solution solution = new TrappingRainWater_42().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int trap(int[] height) {
-        return 0;
+        // 动态规划计算 左右两侧的最大高度
+//        int n = height.length;
+//        int[] leftMax = new int[n];
+//        leftMax[0] = height[0];
+//        for (int i = 1; i < n; i++) {
+//            leftMax[i] = Math.max(leftMax[i - 1], height[i]);
+//        }
+//        int[] rightMax = new int[n];
+//        rightMax[n - 1] = height[n - 1];
+//        for(int i = n - 2; i >= 0; i--){
+//            rightMax[i] = Math.max(rightMax[i + 1], height[i]);
+//        }
+//        int res = 0;
+//        for(int i = 1; i < n - 1; i++){
+//            // 雨水高度为左右两侧最小高度减去当前高度, leftMax[i], rightMax[i]必然大于等于height[i]
+//            res += Math.min(leftMax[i], rightMax[i]) - height[i];
+//        }
+//        return res;
+
+        // 单调栈
+//        int n = height.length;
+//        int res = 0;
+//        Deque<Integer> stack = new LinkedList<>();
+//        for(int i = 0; i < n; i++){
+//            while (! stack.isEmpty() && height[stack.peek()] < height[i]) {
+//                int top = stack.pop();
+//                if (stack.isEmpty()) {
+//                    break;
+//                }
+//                int left = stack.peek();
+//                int curWidth = i - left - 1;
+//                int curHeight = Math.min(height[left], height[i]) - height[top];
+//                res += curWidth * curHeight;
+//            }
+//            stack.push(i);
+//        }
+//        return res;
+
+        // 双指针
+        int ans = 0;
+        int left = 0, right = height.length - 1;
+        int leftMax = 0, rightMax = 0;
+        while (left < right) {
+            leftMax = Math.max(leftMax, height[left]);
+            rightMax = Math.max(rightMax, height[right]);
+            if (height[left] < height[right]) {
+                ans += leftMax - height[left];
+                ++left;
+            } else {
+                ans += rightMax - height[right];
+                --right;
+            }
+        }
+        return ans;
+
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
