@@ -45,7 +45,16 @@ Solution solution = new BestTimeToBuyAndSellStock_121().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int maxProfit(int[] prices) {
-        return 0;
+        int minPrice = Integer.MAX_VALUE;
+        int profit = 0;
+        for(int i = 0; i < prices.length; i++){
+            if(prices[i] < minPrice){
+                minPrice = prices[i];
+            }else if(prices[i] - minPrice > profit){
+                profit = prices[i] - minPrice;
+            }
+        }
+        return profit;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
