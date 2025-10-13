@@ -56,17 +56,56 @@
 
 
 package leetcode.editor.cn;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 class ZigzagConversion_6{
 
 public static void main(String[] args) {
 Solution solution = new ZigzagConversion_6().new Solution();
+System.out.println(solution.convert("A", 1));
 }
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String convert(String s, int numRows) {
-        return "";
+//        if(numRows == 1){
+//            return s;
+//        }
+//
+//        String[] res = new String[numRows];
+//        Arrays.fill(res, "");
+//        boolean flag = false;
+//        for (int i = 0; i < s.length(); i++) {
+//            if(i % (numRows-1) == 0){
+//                flag = !flag;
+//            }
+//            int index = flag ? i % (numRows-1) : (numRows-1) - i % (numRows-1);
+//            res[index] += s.charAt(i);
+//        }
+//        StringBuilder sb = new StringBuilder();
+//        for (String c : res) {
+//            sb.append(c);
+//        }
+//        return sb.toString();
+
+        if(numRows < 2) return s;
+        List<StringBuilder> rows = new ArrayList<>();
+        for(int i = 0; i < numRows; i++) rows.add(new StringBuilder());
+        int i = 0, flag = -1;
+        for(char c : s.toCharArray()) {
+            rows.get(i).append(c);
+            if(i == 0 || i == numRows -1) flag = - flag;
+            i += flag;
+        }
+        StringBuilder res = new StringBuilder();
+        for(StringBuilder row : rows) res.append(row);
+        return res.toString();
     }
+
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
