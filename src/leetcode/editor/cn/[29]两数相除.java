@@ -45,7 +45,38 @@ Solution solution = new DivideTwoIntegers_29().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int divide(int dividend, int divisor) {
-        return 0;
+        // 处理特殊情况
+        if (dividend == Integer.MIN_VALUE && divisor == -1) {
+            return Integer.MAX_VALUE; // 溢出情况
+        }
+        if (divisor == 1) return dividend;
+        if (divisor == -1) return -dividend;
+
+        // 确定结果的符号
+        boolean negative = (dividend > 0) ^ (divisor > 0);
+
+        // 转换为负数来处理，避免Integer.MIN_VALUE取绝对值时的溢出
+        long absDividend = Math.abs((long)dividend);
+        long absDivisor = Math.abs((long)divisor);
+
+        int result = 0;
+
+        // 使用位运算进行除法
+        while (absDividend >= absDivisor) {
+            long temp = absDivisor;
+            int multiple = 1;
+
+            // 通过左移快速找到最大的倍数
+            while (absDividend >= (temp << 1)) {
+                temp <<= 1;
+                multiple <<= 1;
+            }
+
+            absDividend -= temp;
+            result += multiple;
+        }
+
+        return negative ? -result : result;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
