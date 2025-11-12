@@ -14,7 +14,7 @@
 // 示例 1： 
 //
 // 
-//输入：s = "barfoothefoobarman", words = ["foo","bar"]
+//输入：s = "barthefoofoobarman", words = ["foo","bar"]
 //输出：[0,9]
 //解释：因为 words.length == 2 同时 words[i].length == 3，连接的子字符串的长度必须为 6。
 //子串 "barfoo" 开始位置是 0。它是 words 中以 ["bar","foo"] 顺序排列的连接。
@@ -58,7 +58,10 @@
 
 package leetcode.editor.cn;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 class SubstringWithConcatenationOfAllWords_30{
 
@@ -69,7 +72,49 @@ Solution solution = new SubstringWithConcatenationOfAllWords_30().new Solution()
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<Integer> findSubstring(String s, String[] words) {
-        return null;
+        List<Integer> result = new ArrayList<>();
+        if (s == null || s.length() == 0 || words == null || words.length == 0) {
+            return result;
+        }
+
+        int n = s.length(), m = words.length, len = words[0].length();
+
+        Map<String, Integer> wordCount = new HashMap<>();
+        for (String word : words) {
+            wordCount.put(word, wordCount.getOrDefault(word, 0) + 1);
+        }
+
+        for (int i = 0; i < len; i++) {
+            int left = i, right = i;
+            Map<String, Integer> windowCount = new HashMap<>();
+            int count = 0;
+
+            while (right + len <= n) {
+                String word = s.substring(right, right + len);
+                right += len;
+
+                if (wordCount.containsKey(word)) {
+                    windowCount.put(word, windowCount.getOrDefault(word, 0) + 1);
+                    count++;
+
+                    while (windowCount.get(word) > wordCount.get(word)) {
+                        String leftWord = s.substring(left, left + len);
+                        windowCount.put(leftWord, windowCount.get(leftWord) - 1);
+                        left += len;
+                        count--;
+                    }
+
+                    if (count == m) {
+                        result.add(left);
+                    }
+                } else {
+                    windowCount.clear();
+                    count = 0;
+                    left = right;
+                }
+            }
+        }
+        return result;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
