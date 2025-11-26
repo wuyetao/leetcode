@@ -33,7 +33,7 @@
 // countAndSay(3) = "11" 的行程长度编码 = "21" 
 //
 // countAndSay(4) = "21" 的行程长度编码 = "1211" 
-//
+// 111221 312211
 // 示例 2： 
 //
 // 
@@ -70,8 +70,24 @@ Solution solution = new CountAndSay_38().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public String countAndSay(int n) {
-        return null;
+        String s = "1";
+        for(int k = 2; k <= n; k++){
+            StringBuilder res = new StringBuilder();
+            int start = 0;
+            int pos = 0;
+            while(pos < s.length()){
+                while(pos < s.length() && s.charAt(pos) == s.charAt(start)){
+                    pos++;
+                }
+                res.append(pos - start).append(s.charAt(start));
+                start = pos;
+            }
+            s = res.toString();
+        }
+
+        return s;
     }
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
