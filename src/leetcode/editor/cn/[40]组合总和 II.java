@@ -43,6 +43,8 @@
 
 package leetcode.editor.cn;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 class CombinationSumIi_40{
@@ -54,7 +56,37 @@ Solution solution = new CombinationSumIi_40().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-        return null;
+        Arrays.sort(candidates);
+        List<List<Integer>> res = new ArrayList<>();
+        backtrack(candidates, target, 0, new ArrayList<>(), res);
+        return res ;
+    }
+
+    public void backtrack(int[] candidates, int remain, int start, List<Integer> current, List<List<Integer>> result){
+        if(remain < 0){
+            return;
+        }
+        if(remain == 0){
+            result.add(new ArrayList<>(current));
+        }
+
+        for(int i = start; i < candidates.length; i++){
+
+            // 关键剪枝：跳过重复元素，避免重复组合
+            // 跳过的原因：在同一层递归中，如果前一个相同的数字已经尝试过所有组合，当前数字会产生重复组合
+            if (i > start && candidates[i] == candidates[i - 1]) {
+                continue;
+            }
+
+            // 剪枝：如果当前数字已经大于剩余值，后面的更大，直接跳出
+            if (candidates[i] > remain) {
+                break;
+            }
+
+            current.add(candidates[i]);
+            backtrack(candidates, remain - candidates[i], i + 1, current, result);
+            current.remove(current.size() - 1);
+        }
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

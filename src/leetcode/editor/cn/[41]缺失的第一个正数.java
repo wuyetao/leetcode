@@ -46,7 +46,24 @@ Solution solution = new FirstMissingPositive_41().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int firstMissingPositive(int[] nums) {
-        return 0;
+        int n = nums.length;
+        int i = 0;
+        while(i < n){
+            if( nums[i] - 1 < n && nums[i] - 1 >= 0 && nums[i] != nums[nums[i] - 1]){
+                int temp = nums[nums[i] - 1];
+                nums[nums[i] - 1] = nums[i];
+                nums[i] = temp;
+            }else{
+                i++;
+            }
+        }
+
+        for(int j = 0; j < n; j++){
+            if(nums[j] != j + 1){
+                return j + 1;
+            }
+        }
+        return n+1;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
