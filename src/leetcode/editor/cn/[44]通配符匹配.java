@@ -64,14 +64,14 @@ class WildcardMatching_44{
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean isMatch(String s, String p) {
-        int s_n = s.length();
-        int p_n = p.length();
-        boolean[][] dp = new boolean[s_n + 1][p_n + 1];
+        int m = s.length();
+        int n = p.length();
+        boolean[][] dp = new boolean[m + 1][n + 1];
 
         dp[0][0] = true;
 
         // 解决开头如果连续*的问题
-        for(int j = 1; j <= p_n; j++){
+        for(int j = 1; j <= n; j++){
             if(p.charAt(j - 1) == '*'){
                 dp[0][j] = dp[0][j - 1];
             }else{
@@ -79,8 +79,8 @@ class Solution {
             }
         }
 
-        for(int i = 1; i <= s_n; i++){
-            for(int j = 1; j <= p_n; j++){
+        for(int i = 1; i <= m; i++){
+            for(int j = 1; j <= n; j++){
                 char sChar = s.charAt(i-1);
                 char pChar = p.charAt(j-1);
                 if(sChar == pChar || pChar == '?'){
@@ -91,7 +91,7 @@ class Solution {
             }
         }
 
-        return dp[s_n][p_n];
+        return dp[m][n];
 
     }
 }
