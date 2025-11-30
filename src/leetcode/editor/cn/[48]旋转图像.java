@@ -1,7 +1,7 @@
 //给定一个 n × n 的二维矩阵 matrix 表示一个图像。请你将图像顺时针旋转 90 度。 
 //
 // 你必须在 原地 旋转图像，这意味着你需要直接修改输入的二维矩阵。请不要 使用另一个矩阵来旋转图像。 
-//
+// b
 // 
 //
 // 示例 1： 
@@ -43,7 +43,32 @@ Solution solution = new RotateImage_48().new Solution();
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public void rotate(int[][] matrix) {
-        
+        int n = matrix.length;
+        for(int layer = 0; layer < n / 2; layer++){
+            // 层
+            int first = layer;
+            // 最后一个
+            int last = n - layer - 1;
+            for(int i = first; i < last; i++){
+                int offset = i - first;
+
+                // 保存上边
+                int temp = matrix[first][i];
+
+                // 左到上
+                matrix[first][i] = matrix[last - offset][first];
+
+                // 下到左
+                matrix[last - offset][first] = matrix[last][last - offset];
+
+                // 右到下
+                matrix[last][last - offset] = matrix[i][last];
+
+                // 上到右
+                matrix[i][last] = temp;
+
+            }
+        }
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
